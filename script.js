@@ -220,6 +220,7 @@ MyRender(arrTwo,boxTwoUl)
 
 // Menu Funcsion
 let menuBtn = document.querySelector('.menuBtnDiv')
+let menuContent = document.querySelector('.menuContent')
 let menuOpen = false;
 
 menuBtn.addEventListener('click', (e) =>{
@@ -227,8 +228,10 @@ menuBtn.addEventListener('click', (e) =>{
     if (!menuOpen) {
         menuBtn.classList.add('open');
         menuOpen = true;
+        menuContent.classList.add('menuOpen')
     }else{
         menuBtn.classList.remove('open')
         menuOpen = false;
+        menuContent  .classList.remove('menuOpen')
     }
 })
