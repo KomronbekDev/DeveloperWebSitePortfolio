@@ -19,7 +19,7 @@
     }
     .backgroundImg{
         width: 300px;  
-        bottom: 7% !important;  
+        bottom: 10% !important;  
     }
     .contentS h1{
         font-size: 30px;
@@ -42,7 +42,7 @@
     }
     .logoSocial{
         position: absolute;
-        bottom: 7%;
+        bottom: 10% !important;
     }
     .images{
         padding: 20px;
