@@ -108,4 +108,10 @@
     .m-left{
         margin-left: 10px;
     }
+    .menuBtnAnimation , .menuBtnDiv , .menuContent {
+        display: block;
+    }
+    .menuContent{
+        margin-top: 10px;
+    }
 }
