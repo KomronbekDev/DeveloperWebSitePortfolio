@@ -433,6 +433,7 @@ footer{
     cursor: pointer;
     transition: all .5s ease-in-out;
     margin-top: 13px;
+    margin-right: 5px;
 }
 .menuBtnAnimation{
     width: 30px !important;
