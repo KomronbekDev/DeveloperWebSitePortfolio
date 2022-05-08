@@ -1,0 +1,107 @@
+@media (max-width: 767px) {
+    .navList li a, .buttons{
+        display: none;
+    }
+    .navLogo img{
+        width: 50% !important;
+        margin-right: 4px !important;
+    }
+    .navLogo h1{
+        font-size: 23px;
+        padding-top: 8px;
+    }
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .navListMedia{
+        display: none;
+    }
+    .backgroundImg{
+        width: 300px;    
+    }
+    .contentS h1{
+        font-size: 30px;
+    }
+    .contentS p {
+        font-size: 15px;
+        width: 340px;
+    }
+    .searchButton{
+        width: 300px;
+        height: 50px;
+        z-index: 1;
+    }
+    .logoSocial a img{
+        height: 24px;
+        margin-top: 160px;
+    }
+    .logoSocial a{
+        padding: 2px;
+    }
+    .logoSocial{
+        position: absolute;
+        bottom: 30px;
+    }
+    .images{
+        padding: 20px;
+        flex-wrap: wrap !important;
+        justify-content: center;
+    }
+    .images img{
+        width: 50%;
+        padding: 10px;
+    }
+    .contentTwoUl , .boxTwoUl{
+        padding-left: 0rem !important;
+    }
+    .contentFour{
+        display: block;
+    }
+    .boxOne{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .box img{
+        width: 250px;
+    }
+    .footerContent{
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+    .footerOne img{
+        width: auto !important;
+    }
+    .footerOne{
+        padding-left: 40px !important;
+    }
+    .footerLogo {
+        margin-left: 70px;
+        margin-bottom: 20px;
+    }
+    .footerButton{
+        margin-left: 7.5% !important;
+    }
+    .box {
+        display: block;
+        flex-wrap: nowrap;
+    }
+    .box p{
+        padding-top: 10px !important;
+        font-size: 15px;
+        padding-bottom: 30px;
+        width: 290px;
+        text-align: center;
+        margin-left: 10px;
+    }
+    .box img {
+        padding-left: 70px;
+    }
+    .searchButton input{
+        width: 150px !important;
+    }
+    .boxTwoUl p {
+        width: 280px !important;
+    }
+}

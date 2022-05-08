@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    list-style-type: none;
+    text-decoration: none !important;
+}
+body{
+    color: aliceblue;
+    background-color: #1E252B;
+}
+nav{
+    height: 100vh;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.autoTextSpan{
+    position: relative;
+    color: aliceblue;
+}
+.autoTextSpan::before{
+    top: 50%;
+    right: -7px;
+    transform: translateY(-50%);
+    content: '';
+    position: absolute;
+    height: .8em;
+    width: .1em;
+    background-color: white;
+    animation: carot 1s  infinite;
+}
+@keyframes caret{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.navLogo img{
+    color: #FF6E30;
+}
+.navLogo , .navList{
+    display: flex;
+    margin-top: 10px;
+}
+.navList{
+    list-style-type: none;
+}
+.navList li a{
+    text-decoration: none;
+    padding: 0 20px;
+    color: aliceblue;
+}
+.navList li a:hover{
+    color: #FF6E30;
+    transition: 0.4s;
+    border-bottom: 1px solid #FF6E30;
+    padding-bottom: 5px;
+}
+.navLoginButton{
+    font-size: 15px;
+    background-color: transparent;
+    border: 1px solid aliceblue;
+    color: aliceblue;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.navLoginButton:hover{
+    box-shadow: 0 0 7px 3px aliceblue;
+}
+.navSignButton{
+    font-size: 15px;
+    background-color: #FF6E30;
+    border: 1px solid #FF6E30;
+    color: aliceblue;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.navSignButton:hover{
+    box-shadow: 0 0 7px 3px #FF6E30;
+}
+.autoTextDiv{
+    margin-top: 140px;
+}
+.autoTextDiv h1{
+    font-size: 50px;
+}
+.autoTextDiv p {
+    font-size: 20px;
+    width: 700px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.searchButton{
+    width: 480px;
+    height: 50px;
+    background-color: #283036;
+    border-radius: 10px;
+    position: relative;
+}
+.searchButton input{
+    border: none;
+    color: aliceblue;
+    width: 310px;
+    height: 30px;
+    background-color: transparent;
+    border-left: 1px solid aliceblue;
+    padding-left: 10px;
+    position: absolute;
+    top: 10px;
+}
+.searchButton hr{
+    width: 35px;
+    transform: rotate(90deg);
+}
+.searchButton input:focus-visible{
+    outline: none;
+}
+.searchButton button{
+    background-color: #FF6E30;
+    border: 1px solid #FF6E30;
+    color: aliceblue;
+    padding: 6px 30px;
+    border-radius: 5px;
+    position: absolute;
+    right: 7px;
+    top: 7px;
+}
+.searchButton button:hover{
+    background-color: transparent;
+    border: 1px solid aliceblue;
+    color: aliceblue;
+    transition: 0.5s;
+}
+.searchButton img{
+    padding-left: 10px;
+}
+.logoSocial a{
+    text-decoration: none;
+    color: aliceblue;
+    width: 26px;
+    height: 26px;
+    padding: 15px;
+}
+.logoSocial img{
+    margin-top: 40px;
+}
+.contentTwo{
+    margin-top: 150px;
+    text-align: center;
+}
+.contentTwo p {
+    color: rgba(255, 255, 255, 0.55);;
+}
+.contentTwoUl{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+.boxTwoUl{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contentTwoUl li{
+    list-style-type: none;
+    width: 329px;
+    border-radius: 10px;
+    text-align: left;
+    padding: 25px;
+    position: relative;
+    /* margin: 10px; */
+}
+.boxTwoUl li p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.boxTwoUl li{
+    list-style-type: none;
+    width: 300px;
+    border-radius: 10px;
+    text-align: left;
+    padding: 25px;
+    position: relative;
+}
+.contentTwoUl li:hover, .boxTwoUl li:hover{
+    transition: 0.5s;
+    background: rgba(40, 48, 54, 0.6);
+    backdrop-filter: blur(50px);
+    border-radius: 15px;
+}
+.contentTwoUl li h2 , h4 , .boxTwoUl li h2 , h4{
+    margin-left: 100px;
+    padding: 5px;
+}
+.contentTwoUl h4 ,.boxTwoUl h4{
+    color:#FF6E30;
+}
+.contentTwoUl li a img, .boxTwoUl li a img{
+    padding: 5px;
+} 
+.contentTwoUl li p , .boxTwoUl li p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 320px;
+    font-size: 16px;
+}
+.logoImg{
+    position: absolute;
+    margin-top: 20px;
+}
+.contentTwoUl button{
+    margin-left: 110px;
+    background-color: #FF6E30;
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
+    width: 80px;
+    height: 35px;
+}
+.boxTwoUl button{
+    margin-left: 80px;
+    background-color: #FF6E30;
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
+    width: 80px;
+    height: 35px;
+}
+.contentTwoUl button:hover , .boxTwoUl button:hover{
+    background-color: transparent;
+    border: 1px solid aliceblue;
+    color: aliceblue;
+    transition: 0.5s;
+}
+.LoadMore{
+    background-color: #FF6E30;
+    color:aliceblue;
+    border-radius: 5px;
+    align-items: center;
+    margin-top: 50px;
+    width: 150px;
+    height: 50px;
+    border: none;
+}
+.LoadMore:hover{
+    background-color: transparent;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    transition: 0.5s;
+}
+.contentThree h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding-top: 50px;
+}
+.contentThree{
+    display: block;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    width: 100%;
+    height: 250px;
+    border: none;
+    border-radius: 10px;
+    background-color: #283036;
+}
+.images{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 70px 50px 70px;
+}
+.navLogo{
+    margin-top: 0;
+    margin-right: 10px;
+}
+.searchLogo{
+    padding-top: 11px;
+    margin-right: 10px ;
+}
+.autoTextDiv{
+    display: flex;
+    justify-content: left;
+}
+.backgroundImg{
+    width: 500px;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+}
+.nav-content{
+    height: 100vh;
+    position: relative;
+}
+.logoSocial a img{
+    padding-bottom: 5px;
+}
+.instagram{
+    padding-bottom: 0px !important;
+}
+.contentFour{
+    display: flex;
+}
+.boxOne h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 130%;
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: 30px;
+}
+.boxOne p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.55);
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.boxOne button{
+    background-color: #FF6E30;
+    border: 1px solid #FF6E30;
+    color: aliceblue;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+.boxOne button:hover{
+    background-color: transparent;
+    border: 1px solid aliceblue;
+    color: aliceblue;
+    transition: 0.5s;
+}
+.slide{
+    margin-top: 200px;
+}
+.box{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.box img{
+    padding-left: 100px;
+}
+.box p {
+    width: 400px;
+    padding-left: 30px;
+    padding-top: 150px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.015em;
+    color: rgba(255, 255, 255, 0.78);
+}
+.center{
+    text-align: center !important;
+}
+.contentSix{
+    margin-top: 250px;
+}
+.contentSix p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.55);
+}
+.contentSix form{
+    margin-top: 40px;
+    margin-left: 27.5%;
+}
+footer{
+    margin-top: 200px;
+}
+.navListMedia{
+    display: none;
+}
+.footerContent{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.footerContent ul{
+    padding: 0;
+}
+.footerOne{
+    width: 300px;
+}
+.footerContent p, li a{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.55);
+}
+.footerContent li a:hover{
+    color: #FF6E30;
+}
