@@ -105,4 +105,7 @@
     .boxTwoUl p {
         width: 280px !important;
     }
+    .m-left{
+        margin-left: 10px;
+    }
 }

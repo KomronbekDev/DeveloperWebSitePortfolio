@@ -215,3 +215,20 @@ function MyRender(arr, list){
     }
 }
 MyRender(arrTwo,boxTwoUl)
+
+
+
+// Menu Funcsion
+let menuBtn = document.querySelector('.menuBtnDiv')
+let menuOpen = false;
+
+menuBtn.addEventListener('click', (e) =>{
+    e.preventDefault()
+    if (!menuOpen) {
+        menuBtn.classList.add('open');
+        menuOpen = true;
+    }else{
+        menuBtn.classList.remove('open')
+        menuOpen = false;
+    }
+})

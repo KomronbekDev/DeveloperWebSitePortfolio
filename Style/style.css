@@ -13,6 +13,9 @@ body{
 nav{
     height: 80vh;
 }
+.MediaMenuButton{
+    display: none;
+}
 .container{
     width: 80%;
     margin: 0 auto;
@@ -419,4 +422,51 @@ footer{
 }
 .footerContent li a:hover{
     color: #FF6E30;
+}
+.menuBtnDiv{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px !important;
+    height: 20px !important;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    margin-top: 13px;
+}
+.menuBtnAnimation{
+    width: 30px !important;
+    height:2px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+}
+.menuBtnAnimation::before,
+.menuBtnAnimation::after{
+     content: '';
+     position: absolute;
+     width: 30px !important;
+     height: 2px;
+     background: #fff;
+     border-radius: 2px;
+     box-shadow: 0 2px 5px rgba(255,101,47,.2);
+     transition: all .5s ease-in-out;
+}
+.menuBtnAnimation::before{
+    transform: translateY(-10px);
+}
+.menuBtnAnimation::after{
+    transform: translateY(10px);
+}
+.menuBtnDiv.open .menuBtnAnimation{
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+.menuBtnDiv.open .menuBtnAnimation::before{
+    transform: rotate(45deg) translate(35px, -35px);
+}
+.menuBtnDiv.open .menuBtnAnimation::after{
+    transform: rotate(-45deg) translate(35px, 35px);
 }
