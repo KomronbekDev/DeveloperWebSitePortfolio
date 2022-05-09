@@ -221,6 +221,8 @@ MyRender(arrTwo,boxTwoUl)
 // Menu Funcsion
 let menuBtn = document.querySelector('.menuBtnDiv')
 let menuContent = document.querySelector('.menuContent')
+let navListMedia = document.querySelector('.navListMedia')
+let buttonsMedia = document.querySelector('.buttonsMedia')
 let menuOpen = false;
 
 menuBtn.addEventListener('click', (e) =>{
@@ -229,9 +231,13 @@ menuBtn.addEventListener('click', (e) =>{
         menuBtn.classList.add('open');
         menuOpen = true;
         menuContent.classList.add('menuOpen')
+        navListMedia.classList.add('block')
+        buttonsMedia.classList.add('block')
     }else{
-        menuBtn.classList.remove('open')
+        menuBtn.classList.remove('open');
         menuOpen = false;
-        menuContent  .classList.remove('menuOpen')
+        menuContent.classList.remove('menuOpen');
+        navListMedia.classList.remove('block');
+        buttonsMedia.classList.remove('block');
     }
 })

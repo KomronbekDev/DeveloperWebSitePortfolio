@@ -14,9 +14,6 @@
         width: 100%;
         margin: 0 auto;
     }
-    .navListMedia{
-        display: none;
-    }
     .backgroundImg{
         width: 300px;  
         bottom: 10% !important;  
@@ -114,4 +111,9 @@
     .menuContent{
         margin-top: 10px;
     }
+    .open  {
+        margin-left: 311px;
+        margin-top: 43px;
+    }
+    
 }
