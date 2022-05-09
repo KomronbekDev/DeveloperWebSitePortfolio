@@ -514,3 +514,14 @@ footer{
 .block{
     display: block !important;
 }
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #fff;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+   background: #FF6E30;
+   border-radius: 10px;
+}
