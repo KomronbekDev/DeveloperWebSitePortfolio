@@ -112,6 +112,8 @@
         margin-top: 10px;
     }
     .open  {
+        position: absolute;
+        right: 10px;
         margin-left: 311px;
         margin-top: 43px;
     }
