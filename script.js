@@ -241,3 +241,67 @@ menuBtn.addEventListener('click', (e) =>{
         buttonsMedia.classList.remove('block');
     }
 })
+
+// Window Skroll
+
+window.sr = new ScrollReveal()
+sr.reveal('.contentTwo h1', {
+    delay: 100,
+    distance: '100px',
+})
+sr.reveal('.contentTwo p', {
+    delay: 200,
+    distance: '100px',
+})
+sr.reveal('.contentTwoUl li', {
+    delay: 300,
+    distance: '100px',
+})
+sr.reveal('.LoadMore', {
+    delay: 400,
+    distance: '100px',
+})
+sr.reveal('.contentThree h1', {
+    delay: 400,
+    distance: '100px',
+})
+sr.reveal('.contentThree img', {
+    delay: 400,
+    distance: '100px',
+})
+sr.reveal('.boxOne h1', {
+    delay: 400,
+    distance: '100px',
+})
+sr.reveal('.boxOne p', {
+    delay: 400,
+    distance: '100px',
+})
+sr.reveal('.boxOne button', {
+    delay: 400,
+    distance: '100px',
+})
+sr.reveal('.boxTwoUl li', {
+    delay: 400,
+    distance: '100px',
+})
+sr.reveal('.carousel-item img', {
+    delay: 400,
+    distance: '100px',
+})
+sr.reveal('.carousel-item p', {
+    delay: 500,
+    distance: '100px',
+})
+sr.reveal('.contentSix h1', {
+    delay: 400,
+    distance: '100px',
+})
+sr.reveal('.contentSix p', {
+    delay: 400,
+    distance: '100px',
+})
+sr.reveal('.contentSix form', {
+    delay: 400,
+    distance: '100px',
+})
