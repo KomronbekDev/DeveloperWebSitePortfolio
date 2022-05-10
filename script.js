@@ -233,6 +233,14 @@ menuBtn.addEventListener('click', (e) =>{
         menuContent.classList.add('menuOpen')
         navListMedia.classList.add('block')
         buttonsMedia.classList.add('block')
+        sr.reveal('.navListMedia li', {
+            delay: 400,
+            distance: '100px',
+        })
+        sr.reveal('.buttonsMedia button', {
+            delay: 600,
+            distance: '100px',
+        })
     }else{
         menuBtn.classList.remove('open');
         menuOpen = false;
