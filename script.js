@@ -285,14 +285,6 @@ sr.reveal('.boxTwoUl li', {
     delay: 400,
     distance: '100px',
 })
-sr.reveal('.carousel-item img', {
-    delay: 400,
-    distance: '100px',
-})
-sr.reveal('.carousel-item p', {
-    delay: 500,
-    distance: '100px',
-})
 sr.reveal('.contentSix h1', {
     delay: 400,
     distance: '100px',
